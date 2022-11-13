@@ -1,0 +1,16 @@
+html {
+    height: 100%;
+    width: 100%
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main-container {
+    background-image: url(/src/assets/images/madie-hamilton-cuisine.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+}
