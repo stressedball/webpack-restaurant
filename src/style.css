@@ -1,3 +1,22 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url('./assets/fonts/Pacifico/Pacifico-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Satisfy';
+    src: url('./assets/fonts/Satisfy/Satisfy-Regular.ttf');
+}
+
+:root {
+    --background-color : rgb(0, 0, 0, 0.55);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     height: 100%;
     width: 100%
@@ -6,11 +25,215 @@ html {
 body {
     height: 100%;
     width: 100%;
+    margin: 0;
+    /* font-family: 'Pacifico', arial; */
+    /* background: radial-gradient(black, white); */
+    background-image: url(/src/assets/images/miha-rekar-unsplash.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    overflow: hidden;
 }
 
-.main-container {
-    background-image: url(/src/assets/images/madie-hamilton-cuisine.jpg);
-    height: 100%;
+a {
+    padding: 20px 20px 20px 20px;
+    font-family: 'Pacifico';
+}
+
+a:hover {
+    background-color: rgb(0, 0, 0, 0.8);
+    color: beige;
+    /* scale: 1.1; */
+    cursor: pointer;
+    /* font-size: 1.2em; */
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+.about-container {
+    display: grid;
+    grid-template-rows: 100px 200px;
+    /* grid-template-columns: repeat(2, 1fr); */
+    color: white;
+    background-color: rgb(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 30px 30px 30px 30px;
+}
+
+.about-container-welcomer {
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 100px 200px;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.about-container-welcomer > img{
+    border-radius: 20px;
+    /* width: clamp(150px, 170px, 190px); */
     width: 100%;
-    background-size: contain;
+    justify-self: end;
+}
+
+.about-information-container {
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 100px 200px;
+    align-items: center;
+    justify-self: end;
+    column-gap: 50px;
+}
+
+.about-information-container img {
+    width: 40px;
+    justify-self: end;
+}
+
+.beverage-container {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    width: clamp(500px, 550px, 600px);
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background-color);
+    color: white;
+    padding: 10px 50px 10px 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card:nth-of-type(1).pizza, .card:nth-of-type(1).beverage {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.card:nth-of-type(5).pizza, .card:nth-of-type(2).beverage {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#content {
+    height: 100%;
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.footer {
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-weight: 900;
+    background-color: var(--background-color);
+}
+
+.home-message {
+    font-size: 1.5em;
+    color: white;
+    padding: 30px 150px 30px 150px;
+    text-align: center;
+    line-height: 1.2em;
+    font-weight: 400;
+    overflow: hidden;
+    background-color: var(--background-color);
+    /* font-family: 'Pacifico'; */
+}
+
+.home-message:before {
+    content: 'Here at ';
+}
+
+.home-message:after {
+    content: ', you can enjoy a delicious pizza made with local fresh ingredients. Come with your friends and share a fresh beer. Nothing feels better than good food in a convival moment.';
+}
+
+.home-message-span {
+    color: red;
+    font-size: 2em;
+    text-decoration: underline;
+    font-family: 'Satisfy', cursive;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+.item-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.2em;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+    overflow-y: scroll;
+    gap: 50px;
+    margin: 50px 0 50px 0;
+}
+
+.menu-container h2 {
+    color: white;
+    font-family: 'Satisfy';
+    padding: 20px 0 20px 0;
+    font-size: 1.8em;
+}
+
+.nav {
+    display: flex;
+    color: white;
+    align-self: center;
+    justify-content: center;
+    font-size: 2em;
+    gap: 30px;
+    width: max-content;
+    box-shadow: inset 0px 0px 3px 1px white;
+}
+
+.picture {
+    width: clamp(100px, 150px, 200px);
+}
+
+.pizza-container {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100%; */
+}
+
+.title-home-page {
+    font-family: 'Satisfy', cursive;
+    color: white;
+    padding: 80px 0 80px 0;
+    text-align: center;
+    font-size: 3em;
+    word-spacing: 5px;
+    text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 5px;
 }
