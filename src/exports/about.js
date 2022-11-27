@@ -9,7 +9,7 @@ function about() {
 
     welcomeContainer.classList.add('about-container-welcomer');
     const nice = document.createElement('img');
-    nice.setAttribute('src', '/src/assets/images/nice.png')
+    nice.setAttribute('src', './assets/images/nice.png')
     const welcomerMessage = document.createElement('h3');
     welcomerMessage.textContent = 'Contact us!';
     welcomeContainer.appendChild(nice);
@@ -19,9 +19,9 @@ function about() {
     information.classList.add('about-information-container');
     aboutContainer.appendChild(information);
 
-    const infoLogos = ['/src/assets/icons/phone-svgrepo-com.svg', 
-        '/src/assets/icons/email-svgrepo-com.svg', 
-        '/src/assets/icons/home-svgrepo-com.svg'];
+    const infoLogos = ['./assets/icons/phone-svgrepo-com.svg', 
+        './assets/icons/email-svgrepo-com.svg', 
+        './assets/icons/home-svgrepo-com.svg'];
     const infoText = ['+0012345XXXXX',
         'contact@myrestaurant.com',
         '25th avenue Mars, The Moon 00001 (No idea)']
