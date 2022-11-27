@@ -28,7 +28,7 @@ body {
     margin: 0;
     /* font-family: 'Pacifico', arial; */
     /* background: radial-gradient(black, white); */
-    background-image: url(/src/assets/images/miha-rekar-unsplash.jpg);
+    background-image: url(./assets/images/miha-rekar-unsplash.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

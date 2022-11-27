@@ -34,7 +34,6 @@ function about() {
         information.appendChild(logo);
         information.appendChild(info);
     }
-
 }
 
 export {about};
