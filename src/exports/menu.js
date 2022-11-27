@@ -59,13 +59,13 @@ const itemsDescriptions = ['Tomato sauce, basilic and mozarella',
     'Artichoke cream, mozzarella, artichokes, nostraline olives, rocket, cherry tomatoes, oregano', 'Mozzarella and tuna', 
     'A light blonde belgium beer', 
     'Another one?'];
-const itemsPicsPaths = ['/src/assets/images/margherita.webp', 
-    '/src/assets/images/prosciutto.jpg',
-    '/src/assets/images/cappriciuosa.jpeg', 
-    '/src/assets/images/carciofini.jpeg', 
-    '/src/assets/images/tonno.jpeg', 
-    '/src/assets/images/leffe.jpg', 
-    '/src/assets/images/tripleKarmeliet.jpg'];
+const itemsPicsPaths = ['./assets/images/margherita.webp', 
+    './assets/images/prosciutto.jpg',
+    './assets/images/cappriciuosa.jpeg', 
+    './assets/images/carciofini.jpeg', 
+    './assets/images/tonno.jpeg', 
+    './assets/images/leffe.jpg', 
+    './assets/images/tripleKarmeliet.jpg'];
 
 function populateHTML() {
 
