@@ -5,7 +5,7 @@ module.exports = {
   entry:  './src/index.js',
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, "dist"),
   },
   module: {
     rules: [
@@ -26,7 +26,7 @@ module.exports = {
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: 'src/assets', to: 'src/assets'}
+        { from: 'src/assets', to: 'assets'}
       ]
     })
   ]
